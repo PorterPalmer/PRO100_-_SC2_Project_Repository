@@ -1,1 +1,1 @@
-# PRO100---SC2-Project-Repository
+# PRO100 - SC2 Project Repository
