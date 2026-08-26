@@ -14,11 +14,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+03601bc24b92e727521927faf9052762d4dbbbf6")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+65595623e3c825109d90ea070db2b7e508feb6cb")]
 >>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5a193a1838a2af601382b53fb68fd0bef64922c4")]
+>>>>>>> main
 [assembly: System.Reflection.AssemblyProductAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

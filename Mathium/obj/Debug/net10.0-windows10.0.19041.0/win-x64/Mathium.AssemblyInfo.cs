@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
@@ -19,6 +20,16 @@ using System.Reflection;
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+65595623e3c825109d90ea070db2b7e508feb6cb")]
 >>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.mathium")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "Mathium")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mathium")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5a193a1838a2af601382b53fb68fd0bef64922c4")]
+>>>>>>> main
 [assembly: System.Reflection.AssemblyProductAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

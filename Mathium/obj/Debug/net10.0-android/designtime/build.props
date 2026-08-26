@@ -23,7 +23,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
+<<<<<<< HEAD
 _nugetassetsfilehash=
+=======
+_nugetassetsfilehash=d0e670cda51eb7f5ec072c93fa79bf4b392dbdcf681806fbf4c49c2c5ef478e6
+>>>>>>> main
 typemapkind=strings-asm
 androidmanifestplaceholders=
 projectfullpath=c:\users\okeller\documents\github\pro100_-_sc2_project_repository\mathium\mathium.csproj
