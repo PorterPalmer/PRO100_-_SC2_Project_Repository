@@ -6,13 +6,13 @@ namespace Mathium.Models
 {
     public abstract class MathQuestion
     {
-        public string Question { get; set; }
-        public GradeLevel GradeLevel { get; set; }
+        public GradeLevel GradeLevel { get; protected set; }
+        public string Question { get; protected set; }
 
-        protected MathQuestion(string question, GradeLevel gradeLevel)
+        protected MathQuestion(GradeLevel gradeLevel, string question)
         {
-            Question = question;
             GradeLevel = gradeLevel;
+            Question = question;
         }
     }
 }

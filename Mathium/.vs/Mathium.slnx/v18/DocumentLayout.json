@@ -1,11 +1,36 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\",
-=======
-  "WorkspaceRootPath": "C:\\Users\\zstanley\\Documents\\School\\Y1\\Quarter 4\\PRO100\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\",
->>>>>>> main
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\controllers\\questiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:controllers\\questiongenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\utility\\mathsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:utility\\mathsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\models\\fraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:models\\fraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\models\\gradelevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:models\\gradelevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\models\\multipleanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:models\\multipleanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\models\\singleanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:models\\singleanswerquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|c:\\users\\okeller\\documents\\github\\pro100_-_sc2_project_repository\\mathium\\models\\mathquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49D856D3-06B3-DA66-E986-7DD37B0E7BFA}|Mathium.csproj|solutionrelative:models\\mathquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -13,12 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-<<<<<<< HEAD
             },
             {
               "$type": "Bookmark",
@@ -27,8 +51,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-=======
->>>>>>> main
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestionGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Controllers\\QuestionGenerator.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionGenerator.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Controllers\\QuestionGenerator.cs",
+              "RelativeToolTip": "Controllers\\QuestionGenerator.cs",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAswPoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:35:25.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fraction.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\Fraction.cs",
+              "RelativeDocumentMoniker": "Models\\Fraction.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\Fraction.cs",
+              "RelativeToolTip": "Models\\Fraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:34:54.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GradeLevel.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\GradeLevel.cs",
+              "RelativeDocumentMoniker": "Models\\GradeLevel.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\GradeLevel.cs",
+              "RelativeToolTip": "Models\\GradeLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:33:51.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MathSystem.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Utility\\MathSystem.cs",
+              "RelativeDocumentMoniker": "Utility\\MathSystem.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Utility\\MathSystem.cs",
+              "RelativeToolTip": "Utility\\MathSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:28:02.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MultipleAnswerQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\MultipleAnswerQuestion.cs",
+              "RelativeDocumentMoniker": "Models\\MultipleAnswerQuestion.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\MultipleAnswerQuestion.cs",
+              "RelativeToolTip": "Models\\MultipleAnswerQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:33:43.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SingleAnswerQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\SingleAnswerQuestion.cs",
+              "RelativeDocumentMoniker": "Models\\SingleAnswerQuestion.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\SingleAnswerQuestion.cs",
+              "RelativeToolTip": "Models\\SingleAnswerQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:33:31.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MathQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\MathQuestion.cs",
+              "RelativeDocumentMoniker": "Models\\MathQuestion.cs",
+              "ToolTip": "C:\\Users\\okeller\\Documents\\GitHub\\PRO100_-_SC2_Project_Repository\\Mathium\\Models\\MathQuestion.cs",
+              "RelativeToolTip": "Models\\MathQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T20:31:34.257Z",
+              "EditorCaption": ""
             }
           ]
         }

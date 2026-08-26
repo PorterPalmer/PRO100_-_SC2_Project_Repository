@@ -12,10 +12,10 @@ namespace Mathium.Models
         ThirdGrade,
         FourthGrade,
         FifthGrade,
-        Sixthgrade,
+        SixthGrade,
         SeventhGrade,
-        Eighthrade,
-        NinethGrade,
+        EighthGrade,
+        NinthGrade,
         TenthGrade,
         EleventhGrade,
         TwelfthGrade

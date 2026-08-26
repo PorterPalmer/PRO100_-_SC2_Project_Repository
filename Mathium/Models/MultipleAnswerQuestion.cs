@@ -6,13 +6,13 @@ namespace Mathium.Models
 {
     public class MultipleAnswerQuestion : MathQuestion
     {
-        public List<double> Answers { get; set; }
+        public List<double> Answers { get; protected set; }
 
         public MultipleAnswerQuestion(
-            string question,
             GradeLevel gradeLevel,
+            string question,
             List<double> answers)
-            : base(question, gradeLevel)
+            : base(gradeLevel, question)
         {
             Answers = answers;
         }
