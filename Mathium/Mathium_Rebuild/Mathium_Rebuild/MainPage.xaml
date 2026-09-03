@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- =============================================================
+     QUIZ / PRACTICE PAGE
+     ============================================================= -->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.MainPage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid
+        Padding="22,25,22,22"
+        RowDefinitions="Auto,Auto,*,Auto,Auto"
+        RowSpacing="18">
+
+
+        <!-- TOP BAR -->
+        <Grid
+            Grid.Row="0"
+            ColumnDefinitions="Auto,*,Auto"
+            VerticalOptions="Center">
+
+            <!-- Back -->
+            <Button
+                Grid.Column="0"
+                Text="←"
+                FontSize="25"
+                FontAttributes="Bold"
+                WidthRequest="54"
+                HeightRequest="54"
+                CornerRadius="27"
+                Padding="0"
+                BackgroundColor="{DynamicResource CardBackgroundColor}"
+                TextColor="{DynamicResource PrimaryTextColor}"
+                Clicked="OnBackClicked" />
+
+            <!-- Title -->
+            <VerticalStackLayout
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Spacing="0">
+
+                <Label
+                    Text="MATHIUM"
+                    FontSize="21"
+                    FontAttributes="Bold"
+                    CharacterSpacing="2"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource PrimaryTextColor}" />
+
+                <Label
+                    x:Name="ModeLabel"
+                    Text="QUIZ"
+                    FontSize="10"
+                    FontAttributes="Bold"
+                    CharacterSpacing="3"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource AccentColor}" />
+
+            </VerticalStackLayout>
+
+            <!-- Score -->
+            <Border
+                Grid.Column="2"
+                Padding="14,9"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 18"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <VerticalStackLayout
+                    Spacing="0">
+
+                    <Label
+                        Text="SCORE"
+                        FontSize="9"
+                        FontAttributes="Bold"
+                        CharacterSpacing="1"
+                        HorizontalOptions="Center"
+                        TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    <Label
+                        x:Name="ScoreLabel"
+                        Text="0"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </Grid>
+
+
+        <!-- PROGRESS -->
+        <Grid
+            Grid.Row="1"
+            ColumnDefinitions="*,Auto"
+            ColumnSpacing="15">
+
+            <ProgressBar
+                x:Name="QuizProgress"
+                Grid.Column="0"
+                Progress="0"
+                HeightRequest="7"
+                VerticalOptions="Center"
+                ProgressColor="{DynamicResource AccentColor}"
+                BackgroundColor="{DynamicResource CardBackgroundColor}" />
+
+            <Label
+                Grid.Column="1"
+                x:Name="ProgressLabel"
+                FontSize="13"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                TextColor="{DynamicResource SecondaryTextColor}" />
+
+        </Grid>
+
+
+        <!-- QUESTION AND ANSWERS -->
+        <VerticalStackLayout
+            Grid.Row="2"
+            Spacing="18"
+            VerticalOptions="Center">
+
+            <!-- Question -->
+            <Border
+                Padding="28,30"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 32"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Border.Shadow>
+                    <Shadow
+                        Radius="20"
+                        Opacity="0.18"
+                        Offset="0,8" />
+                </Border.Shadow>
+
+                <VerticalStackLayout
+                    Spacing="12"
+                    HorizontalOptions="Center">
+
+                    <Label
+                        Text="SOLVE THIS"
+                        FontSize="11"
+                        FontAttributes="Bold"
+                        CharacterSpacing="3"
+                        HorizontalOptions="Center"
+                        TextColor="{DynamicResource AccentColor}" />
+
+                    <Label
+                        x:Name="QuestionLabel"
+                        FontSize="36"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- ANSWERS -->
+            <Grid
+                ColumnDefinitions="*,*"
+                RowDefinitions="*,*"
+                ColumnSpacing="14"
+                RowSpacing="14">
+
+                <!-- A -->
+                <Border
+                    x:Name="BubbleA"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HeightRequest="135"
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 28"
+                    Stroke="{DynamicResource AnswerAText}"
+                    Background="{DynamicResource AnswerABackground}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnOptionTapped" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="18"
+                        RowDefinitions="Auto,*">
+
+                        <Label
+                            Text="A"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AnswerAText}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="OptionALabel"
+                            FontSize="26"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- B -->
+                <Border
+                    x:Name="BubbleB"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HeightRequest="135"
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 28"
+                    Stroke="{DynamicResource AnswerBText}"
+                    Background="{DynamicResource AnswerBBackground}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnOptionTapped" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="18"
+                        RowDefinitions="Auto,*">
+
+                        <Label
+                            Text="B"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AnswerBText}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="OptionBLabel"
+                            FontSize="26"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- C -->
+                <Border
+                    x:Name="BubbleC"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    HeightRequest="135"
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 28"
+                    Stroke="{DynamicResource AnswerCText}"
+                    Background="{DynamicResource AnswerCBackground}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnOptionTapped" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="18"
+                        RowDefinitions="Auto,*">
+
+                        <Label
+                            Text="C"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AnswerCText}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="OptionCLabel"
+                            FontSize="26"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- D -->
+                <Border
+                    x:Name="BubbleD"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HeightRequest="135"
+                    StrokeThickness="3"
+                    StrokeShape="RoundRectangle 28"
+                    Stroke="{DynamicResource AnswerDText}"
+                    Background="{DynamicResource AnswerDBackground}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnOptionTapped" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="18"
+                        RowDefinitions="Auto,*">
+
+                        <Label
+                            Text="D"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AnswerDText}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="OptionDLabel"
+                            FontSize="26"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+        </VerticalStackLayout>
+
+
+        <!-- FEEDBACK -->
+        <Label
+            Grid.Row="3"
+            x:Name="FeedbackLabel"
+            FontSize="16"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            TextColor="{DynamicResource PrimaryTextColor}" />
+
+
+        <!-- NEXT -->
+        <Button
+            Grid.Row="4"
+            x:Name="NextButton"
+            Text="NEXT QUESTION   →"
+            IsVisible="False"
+            Clicked="OnNextClicked"
+            BackgroundColor="{DynamicResource AccentColor}"
+            TextColor="{DynamicResource ButtonTextColor}"
+            FontAttributes="Bold"
+            FontSize="15"
+            CornerRadius="27"
+            Padding="0"
+            WidthRequest="210"
+            HeightRequest="54"
+            HorizontalOptions="Center" />
+
+    </Grid>
+
+</ContentPage>

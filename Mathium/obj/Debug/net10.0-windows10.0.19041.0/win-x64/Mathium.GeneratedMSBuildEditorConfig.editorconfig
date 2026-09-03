@@ -59,6 +59,76 @@ build_metadata.AdditionalFiles.NoWarn =
 build_metadata.AdditionalFiles.EnableDiagnostics = 
 build_metadata.AdditionalFiles.LineInfo = 
 
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.App.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\App.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\App.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\AppShell.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\MainPage.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/obj/Debug/net10.0-windows10.0.19041.0/win-x64/Platforms/Windows/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.obj.Debug.net10._0_windows10._0._19041._0.win_x64.Platforms.Windows.App.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\obj\Debug\net10.0-windows10.0.19041.0\win-x64\Platforms\Windows\App.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/Platforms/Windows/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.Platforms.Windows.App.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\Platforms\Windows\App.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\Platforms\Windows\App.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
+[C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Mathium_Rebuild/Mathium_Rebuild/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Mathium_Rebuild.Mathium_Rebuild.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Mathium_Rebuild\Mathium_Rebuild\Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Mathium_Rebuild\Mathium_Rebuild\Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.Inflator = SourceGen
+build_metadata.AdditionalFiles.NoWarn = 
+build_metadata.AdditionalFiles.EnableDiagnostics = 
+build_metadata.AdditionalFiles.LineInfo = 
+
 [C:/Users/okeller/Documents/GitHub/PRO100_-_SC2_Project_Repository/Mathium/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mathium.Resources.Styles.Colors.xaml
