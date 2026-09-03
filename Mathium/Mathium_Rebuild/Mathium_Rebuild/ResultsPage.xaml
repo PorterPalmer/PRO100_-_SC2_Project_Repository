@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- =============================================================
+     QUIZ RESULTS
+     ============================================================= -->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.ResultsPage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid
+        Padding="28"
+        RowDefinitions="Auto,*,Auto"
+        RowSpacing="25">
+
+        <!-- HEADER -->
+        <Grid
+            Grid.Row="0"
+            ColumnDefinitions="Auto,*"
+            ColumnSpacing="15">
+
+            <Button
+                Grid.Column="0"
+                Text="←"
+                FontSize="25"
+                FontAttributes="Bold"
+                WidthRequest="54"
+                HeightRequest="54"
+                CornerRadius="27"
+                Padding="0"
+                BackgroundColor="{DynamicResource CardBackgroundColor}"
+                TextColor="{DynamicResource PrimaryTextColor}"
+                Clicked="OnBackClicked" />
+
+            <VerticalStackLayout
+                Grid.Column="1"
+                VerticalOptions="Center"
+                Spacing="2">
+
+                <Label
+                    Text="QUIZ COMPLETE"
+                    FontSize="11"
+                    FontAttributes="Bold"
+                    CharacterSpacing="3"
+                    TextColor="{DynamicResource AccentColor}" />
+
+                <Label
+                    Text="Your Results"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="{DynamicResource PrimaryTextColor}" />
+
+            </VerticalStackLayout>
+
+        </Grid>
+
+
+        <!-- RESULTS CARD -->
+        <Border
+            Grid.Row="1"
+            Padding="30"
+            StrokeThickness="0"
+            StrokeShape="RoundRectangle 32"
+            Background="{DynamicResource CardBackgroundColor}"
+            VerticalOptions="Center">
+
+            <Border.Shadow>
+                <Shadow
+                    Radius="22"
+                    Opacity="0.18"
+                    Offset="0,8" />
+            </Border.Shadow>
+
+            <VerticalStackLayout
+                Spacing="18"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="FINAL SCORE"
+                    FontSize="12"
+                    FontAttributes="Bold"
+                    CharacterSpacing="3"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource AccentColor}" />
+
+                <Label
+                    x:Name="ScoreLabel"
+                    Text="0/10"
+                    FontSize="64"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource PrimaryTextColor}" />
+
+                <Label
+                    x:Name="GradeLabel"
+                    Text="6th Grade"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource SecondaryTextColor}" />
+
+                <BoxView
+                    HeightRequest="1"
+                    HorizontalOptions="Fill"
+                    Color="{DynamicResource PageBackgroundColor}" />
+
+                <Label
+                    x:Name="BestScoreLabel"
+                    Text="Personal Best: 0/10"
+                    FontSize="17"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource PrimaryTextColor}" />
+
+                <Label
+                    x:Name="HighScoreLabel"
+                    Text=""
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="{DynamicResource AccentColor}" />
+
+            </VerticalStackLayout>
+
+        </Border>
+
+
+        <!-- BUTTONS -->
+        <VerticalStackLayout
+            Grid.Row="2"
+            Spacing="12">
+
+            <Button
+                Text="TRY AGAIN   ↻"
+                HeightRequest="54"
+                CornerRadius="27"
+                Padding="0"
+                BackgroundColor="{DynamicResource AccentColor}"
+                TextColor="{DynamicResource ButtonTextColor}"
+                FontAttributes="Bold"
+                Clicked="OnTryAgainClicked" />
+
+            <Button
+                Text="BACK TO HOME"
+                HeightRequest="54"
+                CornerRadius="27"
+                Padding="0"
+                BackgroundColor="{DynamicResource CardBackgroundColor}"
+                TextColor="{DynamicResource PrimaryTextColor}"
+                FontAttributes="Bold"
+                Clicked="OnHomeClicked" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

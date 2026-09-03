@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- =============================================================
+     SETTINGS
+     ============================================================= -->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.SettingsPage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="26,30,26,30"
+            Spacing="20">
+
+            <!-- HEADER -->
+            <Grid
+                ColumnDefinitions="Auto,*"
+                ColumnSpacing="15">
+
+                <Button
+                    Grid.Column="0"
+                    Text="←"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    WidthRequest="54"
+                    HeightRequest="54"
+                    CornerRadius="27"
+                    Padding="0"
+                    BackgroundColor="{DynamicResource CardBackgroundColor}"
+                    TextColor="{DynamicResource PrimaryTextColor}"
+                    Clicked="OnBackClicked" />
+
+                <VerticalStackLayout
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    Spacing="1">
+
+                    <Label
+                        Text="MATHIUM"
+                        FontSize="11"
+                        FontAttributes="Bold"
+                        CharacterSpacing="3"
+                        TextColor="{DynamicResource AccentColor}" />
+
+                    <Label
+                        Text="Settings"
+                        FontSize="29"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+
+            <!-- APPEARANCE -->
+            <Label
+                Text="APPEARANCE"
+                FontSize="12"
+                FontAttributes="Bold"
+                CharacterSpacing="3"
+                TextColor="{DynamicResource SecondaryTextColor}"
+                Margin="3,10,0,0" />
+
+            <Border
+                Padding="20"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 25"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Grid
+                    ColumnDefinitions="Auto,*,Auto"
+                    ColumnSpacing="15">
+
+                    <Border
+                        Grid.Column="0"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 17"
+                        Background="{DynamicResource PageBackgroundColor}">
+
+                        <Label
+                            Text="☾"
+                            FontSize="27"
+                            TextColor="{DynamicResource PrimaryTextColor}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    </Border>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="2">
+
+                        <Label
+                            Text="Dark Mode"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Use a black background with white text."
+                            FontSize="12"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                    <Switch
+                        Grid.Column="2"
+                        x:Name="DarkModeSwitch"
+                        VerticalOptions="Center"
+                        Toggled="OnDarkModeToggled" />
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- BACKGROUND -->
+            <Label
+                Text="BACKGROUND"
+                FontSize="12"
+                FontAttributes="Bold"
+                CharacterSpacing="3"
+                TextColor="{DynamicResource SecondaryTextColor}"
+                Margin="3,10,0,0" />
+
+            <Border
+                Padding="20"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 25"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <VerticalStackLayout
+                    Spacing="15">
+
+                    <Label
+                        Text="Light Mode Background"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    <Grid
+                        ColumnDefinitions="*,*,*,*"
+                        ColumnSpacing="9">
+
+                        <Button
+                            Grid.Column="0"
+                            Text="Light"
+                            HeightRequest="48"
+                            CornerRadius="18"
+                            Padding="0"
+                            BackgroundColor="#F4F6FB"
+                            TextColor="#171923"
+                            Clicked="OnLightBackgroundClicked" />
+
+                        <Button
+                            Grid.Column="1"
+                            Text="Blue"
+                            HeightRequest="48"
+                            CornerRadius="18"
+                            Padding="0"
+                            BackgroundColor="#E8F1FF"
+                            TextColor="#171923"
+                            Clicked="OnBlueBackgroundClicked" />
+
+                        <Button
+                            Grid.Column="2"
+                            Text="Purple"
+                            HeightRequest="48"
+                            CornerRadius="18"
+                            Padding="0"
+                            BackgroundColor="#F1E8FF"
+                            TextColor="#171923"
+                            Clicked="OnPurpleBackgroundClicked" />
+
+                        <Button
+                            Grid.Column="3"
+                            Text="Green"
+                            HeightRequest="48"
+                            CornerRadius="18"
+                            Padding="0"
+                            BackgroundColor="#E8F8EC"
+                            TextColor="#171923"
+                            Clicked="OnGreenBackgroundClicked" />
+
+                    </Grid>
+
+                    <Label
+                        Text="These colors are used when Dark Mode is turned off."
+                        FontSize="12"
+                        TextColor="{DynamicResource SecondaryTextColor}" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

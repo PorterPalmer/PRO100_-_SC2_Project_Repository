@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- =============================================================
+     GRADE SELECTION
+     ============================================================= -->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.GradeSelectionPage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="26,30,26,30"
+            Spacing="18">
+
+            <!-- HEADER -->
+            <Grid
+                ColumnDefinitions="Auto,*"
+                ColumnSpacing="15"
+                Margin="0,0,0,5">
+
+                <Button
+                    Grid.Column="0"
+                    Text="←"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    WidthRequest="54"
+                    HeightRequest="54"
+                    CornerRadius="27"
+                    Padding="0"
+                    BackgroundColor="{DynamicResource CardBackgroundColor}"
+                    TextColor="{DynamicResource PrimaryTextColor}"
+                    Clicked="OnBackClicked" />
+
+                <VerticalStackLayout
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    Spacing="1">
+
+                    <Label
+                        x:Name="ModeLabel"
+                        Text="QUIZ SETUP"
+                        FontSize="11"
+                        FontAttributes="Bold"
+                        CharacterSpacing="3"
+                        TextColor="{DynamicResource AccentColor}" />
+
+                    <Label
+                        x:Name="TitleLabel"
+                        Text="Choose Your Grade"
+                        FontSize="27"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+
+            <!-- DESCRIPTION -->
+            <Border
+                Padding="20"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 22"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Grid
+                    ColumnDefinitions="Auto,*"
+                    ColumnSpacing="15">
+
+                    <Label
+                        Grid.Column="0"
+                        Text="?"
+                        FontSize="34"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource AccentColor}"
+                        VerticalOptions="Center" />
+
+                    <Label
+                        Grid.Column="1"
+                        x:Name="DescriptionLabel"
+                        Text="Choose a grade to begin your 10-question quiz."
+                        FontSize="14"
+                        LineBreakMode="WordWrap"
+                        TextColor="{DynamicResource SecondaryTextColor}"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- ELEMENTARY -->
+            <Label
+                Text="ELEMENTARY"
+                FontSize="12"
+                FontAttributes="Bold"
+                CharacterSpacing="3"
+                TextColor="{DynamicResource SecondaryTextColor}"
+                Margin="3,8,0,0" />
+
+            <Grid
+                ColumnDefinitions="*,*"
+                RowDefinitions="Auto,Auto,Auto"
+                ColumnSpacing="12"
+                RowSpacing="12">
+
+                <!-- Kindergarten -->
+                <Border
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="Kindergarten" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="Kindergarten"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="KindergartenScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 1st -->
+                <Border
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="FirstGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="1st Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="FirstGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 2nd -->
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="SecondGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="2nd Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="SecondGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 3rd -->
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="ThirdGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="3rd Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="ThirdGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 4th -->
+                <Border
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="FourthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="4th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="FourthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 5th -->
+                <Border
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="FifthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="5th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="FifthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- MIDDLE / HIGH SCHOOL -->
+            <Label
+                Text="MIDDLE &amp; HIGH SCHOOL"
+                FontSize="12"
+                FontAttributes="Bold"
+                CharacterSpacing="3"
+                TextColor="{DynamicResource SecondaryTextColor}"
+                Margin="3,10,0,0" />
+
+            <Grid
+                ColumnDefinitions="*,*"
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                ColumnSpacing="12"
+                RowSpacing="12">
+
+                <!-- 6th -->
+                <Border
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="SixthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="6th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="SixthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 7th -->
+                <Border
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="SeventhGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="7th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="SeventhGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 8th -->
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="EighthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="8th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="EighthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 9th -->
+                <Border
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="NinthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="9th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="NinthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 10th -->
+                <Border
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="TenthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="10th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="TenthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 11th -->
+                <Border
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="EleventhGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="11th Grade"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="EleventhGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+                <!-- 12th -->
+                <Border
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource AccentColor}">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Tapped="OnGradeTapped"
+                            CommandParameter="TwelfthGrade" />
+                    </Border.GestureRecognizers>
+
+                    <Grid
+                        Padding="14"
+                        RowDefinitions="Auto,Auto">
+
+                        <Label
+                            Text="12th Grade  →"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource ButtonTextColor}" />
+
+                        <Label
+                            Grid.Row="1"
+                            x:Name="TwelfthGradeScore"
+                            Text="Best: 0/10"
+                            FontSize="12"
+                            HorizontalOptions="Center"
+                            TextColor="{DynamicResource ButtonTextColor}" />
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

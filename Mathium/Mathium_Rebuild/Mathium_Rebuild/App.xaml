@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<Application
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- LIGHT THEME -->
+
+            <Color x:Key="PageBackgroundColor">#F4F6FB</Color>
+            <Color x:Key="CardBackgroundColor">#FFFFFF</Color>
+            <Color x:Key="PrimaryTextColor">#171923</Color>
+            <Color x:Key="SecondaryTextColor">#687083</Color>
+            <Color x:Key="AccentColor">#6C63FF</Color>
+            <Color x:Key="ButtonTextColor">#FFFFFF</Color>
+
+            <!-- Answer bubble colors -->
+
+            <Color x:Key="AnswerABackground">#FFE3E3</Color>
+            <Color x:Key="AnswerBBackground">#DCEBFF</Color>
+            <Color x:Key="AnswerCBackground">#DFF7E3</Color>
+            <Color x:Key="AnswerDBackground">#FFF7DA</Color>
+
+            <Color x:Key="AnswerAText">#E94B4B</Color>
+            <Color x:Key="AnswerBText">#357FEA</Color>
+            <Color x:Key="AnswerCText">#42A84F</Color>
+            <Color x:Key="AnswerDText">#C49B00</Color>
+
+
+            <!-- MAUI default resources -->
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary
+                    Source="Resources/Styles/Colors.xaml" />
+
+                <ResourceDictionary
+                    Source="Resources/Styles/Styles.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

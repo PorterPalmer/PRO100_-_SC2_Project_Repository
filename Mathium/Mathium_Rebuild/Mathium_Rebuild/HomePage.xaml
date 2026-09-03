@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- =============================================================
+     MAIN MENU
+     ============================================================= -->
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mathium_Rebuild.HomePage"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="28,35,28,30"
+            Spacing="20">
+
+            <!-- =====================================================
+                 HEADER
+                 ===================================================== -->
+
+            <Grid
+                ColumnDefinitions="*,Auto"
+                Margin="0,5,0,5">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    Spacing="2">
+
+                    <Label
+                        Text="WELCOME TO"
+                        FontSize="12"
+                        FontAttributes="Bold"
+                        CharacterSpacing="3"
+                        TextColor="{DynamicResource AccentColor}" />
+
+                    <Label
+                        Text="MATHIUM"
+                        FontSize="42"
+                        FontAttributes="Bold"
+                        CharacterSpacing="2"
+                        TextColor="{DynamicResource PrimaryTextColor}" />
+
+                    <Label
+                        Text="Learn • Practice • Master"
+                        FontSize="15"
+                        TextColor="{DynamicResource SecondaryTextColor}" />
+
+                </VerticalStackLayout>
+
+                <!-- Decorative math symbol -->
+                <Border
+                    Grid.Column="1"
+                    WidthRequest="62"
+                    HeightRequest="62"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 20"
+                    Background="{DynamicResource AccentColor}"
+                    VerticalOptions="Center">
+
+                    <Label
+                        Text="π"
+                        FontSize="34"
+                        FontAttributes="Bold"
+                        TextColor="{DynamicResource ButtonTextColor}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center" />
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- =====================================================
+                 QUIZ CARD
+                 ===================================================== -->
+
+            <Border
+                Padding="26"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 30"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Border.Shadow>
+                    <Shadow
+                        Radius="20"
+                        Opacity="0.18"
+                        Offset="0,8" />
+                </Border.Shadow>
+
+                <VerticalStackLayout
+                    Spacing="15">
+
+                    <Border
+                        WidthRequest="72"
+                        HeightRequest="72"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 22"
+                        Background="{DynamicResource AccentColor}"
+                        HorizontalOptions="Start">
+
+                        <Label
+                            Text="∑"
+                            FontSize="38"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource ButtonTextColor}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    </Border>
+
+                    <VerticalStackLayout
+                        Spacing="4">
+
+                        <Label
+                            Text="Math Quiz"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Take a 10-question quiz and try to beat your personal best."
+                            FontSize="15"
+                            LineBreakMode="WordWrap"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                    <Button
+                        Text="START QUIZ   →"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        HeightRequest="58"
+                        CornerRadius="29"
+                        Padding="0"
+                        BackgroundColor="{DynamicResource AccentColor}"
+                        TextColor="{DynamicResource ButtonTextColor}"
+                        Clicked="OnQuizClicked" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+
+            <!-- =====================================================
+                 PRACTICE CARD
+                 ===================================================== -->
+
+            <Border
+                Padding="22"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 28"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Border.Shadow>
+                    <Shadow
+                        Radius="14"
+                        Opacity="0.10"
+                        Offset="0,5" />
+                </Border.Shadow>
+
+                <Grid
+                    ColumnDefinitions="Auto,*,Auto"
+                    ColumnSpacing="16">
+
+                    <Border
+                        Grid.Column="0"
+                        WidthRequest="58"
+                        HeightRequest="58"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 19"
+                        Background="{DynamicResource PageBackgroundColor}">
+
+                        <Label
+                            Text="∞"
+                            FontSize="32"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AccentColor}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    </Border>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        Spacing="3">
+
+                        <Label
+                            Text="Practice Mode"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Unlimited questions. No pressure."
+                            FontSize="13"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                    <Button
+                        Grid.Column="2"
+                        Text="→"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        Padding="0"
+                        BackgroundColor="{DynamicResource AccentColor}"
+                        TextColor="{DynamicResource ButtonTextColor}"
+                        Clicked="OnPracticeClicked" />
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- =====================================================
+                 QUICK INFORMATION
+                 ===================================================== -->
+
+            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="14">
+
+                <Border
+                    Grid.Column="0"
+                    Padding="18"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 22"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <VerticalStackLayout
+                        Spacing="6">
+
+                        <Label
+                            Text="✓"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AccentColor}" />
+
+                        <Label
+                            Text="Practice"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Build your skills"
+                            FontSize="12"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <Border
+                    Grid.Column="1"
+                    Padding="18"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 22"
+                    Background="{DynamicResource CardBackgroundColor}">
+
+                    <VerticalStackLayout
+                        Spacing="6">
+
+                        <Label
+                            Text="★"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource AccentColor}" />
+
+                        <Label
+                            Text="Improve"
+                            FontSize="17"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Beat your score"
+                            FontSize="12"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </Grid>
+
+
+            <!-- =====================================================
+                 SETTINGS
+                 ===================================================== -->
+
+            <Border
+                Padding="20"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 24"
+                Background="{DynamicResource CardBackgroundColor}">
+
+                <Grid
+                    ColumnDefinitions="Auto,*,Auto"
+                    ColumnSpacing="15">
+
+                    <Border
+                        Grid.Column="0"
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 16"
+                        Background="{DynamicResource PageBackgroundColor}">
+
+                        <Label
+                            Text="⚙"
+                            FontSize="24"
+                            TextColor="{DynamicResource PrimaryTextColor}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+
+                    </Border>
+
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="2"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Settings"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="{DynamicResource PrimaryTextColor}" />
+
+                        <Label
+                            Text="Appearance &amp; preferences"
+                            FontSize="13"
+                            TextColor="{DynamicResource SecondaryTextColor}" />
+
+                    </VerticalStackLayout>
+
+                    <Button
+                        Grid.Column="2"
+                        Text="→"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        CornerRadius="24"
+                        Padding="0"
+                        BackgroundColor="{DynamicResource AccentColor}"
+                        TextColor="{DynamicResource ButtonTextColor}"
+                        Clicked="OnSettingsClicked" />
+
+                </Grid>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

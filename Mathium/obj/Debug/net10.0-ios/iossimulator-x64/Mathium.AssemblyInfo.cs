@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+5a193a1838a2af601382b53fb68fd0bef64922c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ddde9f1b3c379cef565ca140517de5a61791ea33")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mathium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
